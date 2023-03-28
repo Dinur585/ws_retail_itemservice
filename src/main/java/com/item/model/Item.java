@@ -11,7 +11,7 @@ import java.math.BigInteger;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document("item")
+@Document("ItemsCollection")
 public class Item {
 
     @Id
