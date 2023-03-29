@@ -9,9 +9,10 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://root:rootpassword@localhost:27018/reach-engine?authSource=admin
+      uri: mongodb://${MONGO_HOST}:27017/reach-engine
       username: root
       password: rootpassword
+      authentication-database: admin
       repositories:
         type: AUTO
 
