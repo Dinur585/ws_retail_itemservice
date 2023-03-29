@@ -1,0 +1,5 @@
+com\item\model\Item.class
+com\item\controller\ItemController.class
+WsItemRetailServiceApplication.class
+com\item\repository\ItemRepository.class
+com\item\service\ItemService.class

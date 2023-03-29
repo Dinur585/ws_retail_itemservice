@@ -1,0 +1,20 @@
+server:
+  port: 9200
+
+spring:
+  application:
+    name: ws-retail-itemservice
+  devtools:
+    livereload:
+      enabled: true
+  #  profiles:
+  #    active : DEV
+
+  data:
+    mongodb:
+      uri: mongodb://root:rootpassword@localhost:27018/reach-engine?authSource=admin
+      username: root
+      password: rootpassword
+#      authentication-database: reach-engine
+      repositories:
+        type: AUTO
