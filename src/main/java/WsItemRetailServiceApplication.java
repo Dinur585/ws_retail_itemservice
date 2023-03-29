@@ -7,8 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+//@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
 @ComponentScan(basePackages = "com.item.*")
-@EntityScan(basePackages = {"com.item.*"})
+@EntityScan("com.item.*")
 @EnableMongoRepositories
 public class WsItemRetailServiceApplication {
 

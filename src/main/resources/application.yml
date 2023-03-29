@@ -1,5 +1,6 @@
-#server:
-#  port: 9200
+server:
+  port: 8009
+
 spring:
   application:
     name: ws-retail-itemservice
@@ -9,10 +10,10 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://${MONGO_HOST}:27017/reach-engine
-      username: root
-      password: rootpassword
-      authentication-database: admin
+      uri: mongodb://root:rootpassword@${MONGO_HOST}:27017/reach-engine?authSource=admin
+#      username: root
+#      password: rootpassword
+#      authentication-database: admin
       repositories:
         type: AUTO
 
