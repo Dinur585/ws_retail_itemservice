@@ -16,7 +16,7 @@ public class ItemService {
 
 
     public List<Item> getAllItemsList() {
-        List<Item> itemList = itemRepository.findAll().stream().collect(Collectors.toList());
+        List<Item> itemList = itemRepository.findAll().stream().limit(20).collect(Collectors.toList());
         return itemList;
     }
 }
